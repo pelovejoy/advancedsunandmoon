@@ -1,7 +1,4 @@
-h1 {
-    padding: 2em; 
-    color: cornflowerblue; 
-}
-background {
-    color:aquamarine;
+.image {
+    width: 500px;
+    height: 300px;
 }

@@ -6,15 +6,19 @@
     <title>Sun and Moon</title>
     <meta name="description" content="Sun and Moon">
     <meta name="author" content="Peter">
-    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" ref="stylesheet/style.css">
 </head>
-<h1> Sun and Moon</h1>
-<body>
-    <p>
-        <img=src="images/sun.png" alt="sun"> 
-    </p>
-    <script>  
-       
-    </script>
+<body> 
+<div class="image">
+<script>
+var date = new Date();
+var hours=date.getHours();
+if ((hours>8) && (hours<20)) {
+ document.write("<img id=sun src='images/sun.png'>")
+} else {
+ document.write("<img id=moon src='images/moon.png'>");
+}
+</script>
+</div>
 </body>
 </html>
